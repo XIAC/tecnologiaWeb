@@ -1,0 +1,54 @@
+<div class="jumbotron">
+<h1>Estudiantes</h1>
+        <div class="table-responsive" style="max-width: 85%;">
+        
+          <div class="row clearfix">
+          <div class="col-md-12 column">
+            <table class="table table-bordered table-hover" id="tab_logic">
+              <thead>
+                <tr >
+                  <th class="text-center">
+                    Nº
+                  </th>
+                  <th class="text-center">
+                    Nombre
+                  </th>
+                  <th class="text-center">
+                    Apellido
+                  </th>
+                  <th class="text-center">
+                    Materno
+                  </th>
+                  <th class="text-center">
+                    Gestión
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id='addr0'ng-repeat="estudiante in estudiantes">
+                  <td>
+                  {{estudiante.Id_estudiante}}
+                  </td>
+                  <td>
+                  {{estudiante.nombre}}
+                  </td>
+                  <td>
+                  {{estudiante.paterno}}
+                  </td>
+                  <td>
+                   {{estudiante.materno}}
+                  </td>
+                  <td>
+                   <button class="btn btn-danger"  ng-click="deleteEstudiante(estudiante, $index)">X</button>
+                   <button class="btn btn-primary" ng-click="pdfMaker(estudiante)">PDF</button>
+                  </td>
+                </tr>
+                <tr id='addr1'></tr>
+              </tbody>
+            </table>
+             <button class="btn btn-primary" ng-click="pdfall()">Exportar a PDF</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

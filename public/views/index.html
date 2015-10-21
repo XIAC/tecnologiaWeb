@@ -1,0 +1,29 @@
+<div class="container">
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="main">Marketing</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+          <li><a ui-sref="estudiante">Estudiante</a></li>
+          <li><a ui-sref="almacen">Colegio</a> </li>
+          <li><a ui-sref="administrador">Curso</a></li>
+          <li><a ui-sref="auth">Padres</a></li>
+          <li><a ui-sref="sysadmin">WhatApp</a></li>
+          <li><a ui-sref="tesorero">E-mail</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="main.session">Iniciar session</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div ui-view>
+ 
+
+  </div>
+</div>
